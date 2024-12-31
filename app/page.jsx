@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import { ethers } from 'ethers'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
