@@ -7,7 +7,7 @@ interface PlayerStatsProps {
 export default function PlayerStats({ beneficiary, assets }: PlayerStatsProps) {
   return (
     <div className="pixel-box mt-8">
-      <h2 className="text-2xl mb-4 text-mario-yellow">Player Stats</h2>
+      <h2 className="text-2xl mb-4 text-mario-yellow">Info</h2>
       <div className="grid grid-cols-2 gap-4">
         <div>
           <p className="text-mario-green">Beneficiary:</p>
