@@ -30,7 +30,7 @@ export default function Hero({ connectWallet }: any) {
         </div>
         <div className="relative z-10 flex justify-center items-center">
           <img
-            src="https://i.pinimg.com/originals/2c/61/9b/2c619b5bea0e79e79fae9c078f2e04ce.gif"
+            src="/images/hero.gif"
             alt="Pixelated figure dissolving"
             className="object-contain image-pixelated"
             style={{ imageRendering: 'pixelated' }}
