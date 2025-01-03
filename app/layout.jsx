@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 // Metadata for the app
 export const metadata = {
-  title: "Snmart-Will",
+  title: "Smart-Will",
   description: "A decentralized way to ensure your assets are passed to your loved ones",
 };
 
