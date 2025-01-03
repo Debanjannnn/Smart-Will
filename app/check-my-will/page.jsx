@@ -38,7 +38,7 @@ const CheckMyWill = () => {
   }
 
   return (
-    <div className="py-14 px-6 text-center h-screen bg-black text-white">
+    <div className="py-14 px-6 text-center min-h-screen bg-black text-white">
       <div className="max-w-6xl mx-auto relative z-10">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-['Press_Start_2P'] text-[#ffbf00] mb-8">
           My Will
@@ -90,7 +90,7 @@ const CheckMyWill = () => {
           </>
         ) : (
           <div>
-
+            
           </div>
         )}
       </div>
