@@ -59,13 +59,13 @@ const CheckMyWill = () => {
                 Will Details
               </h2>
               <div className="space-y-4 text-left">
-                <p className="font-['Press_Start_2P'] text-[#ff5733] text-sm">
+                <p className="font-['Press_Start_2P'] text-green-500 text-sm">
                   <span className="text-white">Beneficiary:</span> {willDetails[3]}
                 </p>
-                <p className="font-['Press_Start_2P'] text-[#ff5733] text-sm">
+                <p className="font-['Press_Start_2P'] text-green-500 text-sm">
                   <span className="text-white">Instructions:</span> {willDetails[4]}
                 </p>
-                <p className="font-['Press_Start_2P'] text-[#ff5733] text-sm">
+                <p className="font-['Press_Start_2P'] text-green-500 text-sm">
                   <span className="text-white">Date Created:</span>{' '}
                   {new Date(Number(willDetails[2])).toLocaleDateString()}
                 </p>
