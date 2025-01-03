@@ -1,30 +1,38 @@
-export default function HowItWorks() {
-  const steps = [
-    {
-      number: 1,
-      description: "Insert coin to start your Smart Will game.",
-    },
-    {
-      number: 2,
-      description: "Keep playing by pinging the contract regularly.",
-    },
-    {
-      number: 3,
-      description: "If inactive for 10 years, player 2 can claim the jackpot!",
-    },
-  ];
+const steps = [
+  {
+    number: 1,
+    name: "Step 1", // You should add a name or title for each step
+    description: "Create your Smart Will by depositing funds and specifying a recipient.",
+    color: '', // Add color here
+    icon: "📝" // Add an icon if necessary
+  },
+  {
+    number: 2,
+    name: "Step 2", // Add a name or title for each step
+    description: "Stay active by regularly pinging the contract to keep your will secure.",
+    color: '', // Add color here
+    icon: "🔒" // Add an icon if necessary
+  },
+  {
+    number: 3,
+    name: "Step 3", // Add a name or title for each step
+    description: "After 10 years of inactivity, the recipient can claim the stored funds.",
+    color: '', // Add color here
+    icon: "⏳" // Add an icon if necessary
+  },
+];
 
+export default function Features() {
   return (
-    <div className="py-12 px-6 bg-mario-green">
+    <div className="py-12 px-6 bg-mario-brown">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl text-center mb-8 text-mario-red font-pixel-large">How It Works</h2>
-        <div className="flex justify-center space-x-6">
+        <h2 className="text-4xl text-center mb-8 text-mario-yellow font-pixel-large">Power-Ups</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step) => (
-            <div key={step.number} className="flex-1 bg-mario-yellow p-6 rounded-lg shadow-lg">
-              <div className="w-8 h-8 bg-mario-red text-white flex items-center justify-center font-bold rounded-full mb-4">
-                {step.number}
-              </div>
-              <p className="text-mario-blue font-pixel">{step.description}</p>
+            <div key={step.number} className={`text-center p-6 ${step.color} rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl`}>
+              <div className="text-5xl mb-4">{step.icon}</div>
+              <h3 className="text-2xl mb-2 text-white font-pixel-large">{step.name}</h3>
+              <p className="text-mario-yellow font-pixel">{step.description}</p>
             </div>
           ))}
         </div>

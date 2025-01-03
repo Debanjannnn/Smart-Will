@@ -1,23 +1,24 @@
 const features = [
   {
     name: 'Secure Vault',
-    description: 'Your assets are locked in an 8-bit fortress.',
+    description: 'Your assets are safely stored in a smart contract.',
     icon: '🏰',
     color: 'bg-gradient-to-r from-red-600 to-red-800',
   },
   {
-    name: 'Time Warp',
-    description: 'Assets teleport to heirs after 10 years of inactivity.',
+    name: 'Time Lock',
+    description: 'Assets become accessible to heirs after 10 years of inactivity from the owner.',
     icon: '⏳',
     color: 'bg-gradient-to-r from-blue-600 to-blue-800',
   },
   {
-    name: 'Pixel Perfect',
-    description: 'Every transaction is visible on the blockchain.',
+    name: 'Transparent Transactions',
+    description: 'All transactions are fully visible and verifiable on the blockchain.',
     icon: '👁️',
     color: 'bg-gradient-to-r from-green-600 to-green-800',
   },
 ]
+
 
 export default function Features() {
   return (

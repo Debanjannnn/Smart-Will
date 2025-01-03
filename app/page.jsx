@@ -10,7 +10,7 @@ import HowItWorks from '../components/HowItWorks'
 import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
 import { useSmartWill } from '@/context/SmartWillContext' // Import the context hook
-
+import BalanceDisplay from '../components/BalanceDisplay';
 export default function Home() {
   const [contractData, setContractData] = useState(null)
 
@@ -23,8 +23,8 @@ export default function Home() {
   const [balance, setBalance] = useState(0)
 
   const handleConnectWallet = async () => {
-   const balance = await getContractBalance();
-   setBalance(balance);
+    const balance = await getContractBalance();
+    setBalance(balance);
     await connectWallet() // Use connectWallet function from context
     // Optionally, you can add logic to load contract data once wallet is connected
     if (account) {
@@ -37,7 +37,7 @@ export default function Home() {
     }
   }
 
-  
+
 
   return (
     <div className="min-h-screen bg-black text-white pixelated">
@@ -48,13 +48,13 @@ export default function Home() {
           connectWallet={handleConnectWallet}
           account={account} // Pass the wallet address to Header
         />
-        
+
         <main className=''>
-         
+
           <Hero connectWallet={handleConnectWallet} />
           <Features />
           {account && contractData && <Dashboard contractData={contractData} />}
-          <p> We have kept {balance}</p>
+          <BalanceDisplay balance={balance} />
           <HowItWorks />
           <FAQ />
         </main>
