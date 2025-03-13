@@ -1,4 +1,4 @@
-# Smart-Will
+# Smart Will
 
 Smart Will is a decentralized platform that allows users to ensure their assets are passed on to their loved ones. Built on the blockchain, this application allows you to securely store your assets, define a recipient, and protect your will from unauthorized access. The assets become accessible to the designated recipient after a period of inactivity, ensuring that your wealth is passed on in case of your absence.
 
